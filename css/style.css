@@ -1,0 +1,136 @@
+/* lato-regular - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'),
+         url('../font/lato-v16-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../font/lato-v16-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* lato-700 - latin */
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lato Bold'), local('Lato-Bold'),
+         url('../font/lato-v16-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../font/lato-v16-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* lato-900 - latin */
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Lato Black'), local('Lato-Black'),
+         url('../font/lato-v16-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../font/lato-v16-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  html{
+      box-sizing: border-box;
+  }
+  *, *::before, *::after{
+    box-sizing: inherit;
+  }
+  body{
+    font-family: 'Lato';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #102746; 
+  }
+  .wrapper{
+      max-width: 1060px;
+      margin: 0 auto;
+  }
+  /*header styles start*/
+  .header{
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+  }
+  .header_wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      justify-content: space-between;
+      padding-top: 56px;
+  }
+  .header_list{
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .header_item{
+      margin-right: 82px;
+  }
+  .header_item:last-child{
+      margin-right: 0em;
+  }
+  .header_link{
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+    text-decoration: none;
+  }
+  .header_link:hover,  .header_link:focus,  .header_link::after{
+      opacity: .75;
+  }
+  /*header styles end*/
+
+  /*intro styles start*/
+
+.intro{
+    min-height: 100vh;
+    background: url(../img/Hero.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 263px;
+}
+.intro_title{
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    color: #FFFFFF;
+    max-width: 619px;
+    margin-bottom: 22px;
+}
+.intro_subtitle{
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    max-width: 546px;
+    margin-bottom: 59px;
+}
+.search-form_info{
+    display: flex;
+    flex-wrap: wrap;
+}
+.search-form_inp{
+    background: transparent url(../img/svg/Oval.svg) no-repeat left 7px;
+    background-size: 20px;
+    border: 0;
+    border-bottom: 2px solid #BFC0C5;
+    font-size: 18px;
+    color: white;
+    line-height: 24px;
+    padding-left: 43px;
+    padding-bottom: 22px;
+    margin-right: 61px;
+    width: 297px;
+}
+.search-form_inp::placeholder{
+    color: white;   
+}
+.search-form_sub{
+    text-transform: uppercase;
+    padding: 15px 39px;
+    background: #1B7DFF;
+    font-size: 24px;
+    line-height: 29px;
+    color: white;
+    border: none;
+}
+.search-form_sub:hover, .search-form_sub:active, .search-form_sub:focus{
+    opacity: .8;
+}
+  /*intro styles end*/
